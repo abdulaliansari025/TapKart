@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ois.onistech.gmb">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="GMB"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MyAccount"></activity>
+        <activity
+            android:name=".Order.MyOrders"
+            android:label="My Orders" />
+        <activity
+            android:name=".SinglePro.SingleItem"
+            android:theme="@style/AppTheme.NoActionBar1">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Write <data> tags with one attribute, if you use several domains. -->
+                <data android:scheme="http" />
+                <data
+                    android:host="oursports11.com"
+                    android:pathPrefix="/Admin/ami/show_Single_pro.php" />
+            </intent-filter>
+            <!-- Other domains -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="https" />
+                <data
+                    android:host="oursports11.com"
+                    android:pathPrefix="/Admin/ami/show_Single_pro.php" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CartPackage.ShowCart"
+            android:theme="@style/AppTheme.NoActionBar1" /> <!-- <activity android:name=".ShowProduct.ShowProduct" /> -->
+        <activity
+            android:name=".Splash"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="Green Morning Basket"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity android:name=".Category" />
+        <activity
+            android:name=".MainScreen"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+            <!-- <data android:scheme="http" android:host="oursports11.com/"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="Search Products"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".Cart"
+            android:theme="@style/AppTheme.NoActionBar1" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_hdNlLjMkl5nJIH" />
+    </application>
+
+</manifest>

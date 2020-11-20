@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_empty="true">
+        <layer-list>
+            <item
+                android:width="20dp"
+                android:height="20dp"
+                android:left="11dp"
+                android:right="11dp"
+                android:top="12dp"
+                android:bottom="12dp"
+                
+                android:drawable="@drawable/ic_add">
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_expanded="true">
+        <layer-list>
+            <item
+                android:width="20dp"
+                android:left="11dp"
+                android:right="11dp"
+                android:top="12dp"
+                android:bottom="12dp"
+                android:drawable="@drawable/ic_minus"
+                >
+            </item>
+        </layer-list>
+    </item>
+</selector>

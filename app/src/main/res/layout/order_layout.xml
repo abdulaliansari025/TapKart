@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4.0dp"
+    android:layout_marginRight="4.0dp"
+    card_view:cardCornerRadius="5dp">
+
+    <LinearLayout android:id="@+id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/image_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="90dp"
+                android:layout_height="90.0dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="7dp">
+
+            <RatingBar
+                android:id="@+id/text_ratings"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp11"
+                android:layout_marginTop="10dp"
+                android:isIndicator="false"
+                android:max="5"
+                android:stepSize="1"
+                android:theme="@style/MyRatingBar"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp" />
+
+            <TextView
+                android:id="@+id/sp11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv11"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:paddingRight="15dp"
+                android:text="Product Name">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/delete"
+                android:text="date"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_ratings"
+                android:layout_marginTop="12dp"
+                android:textStyle="normal"
+                android:fontFamily="serif"
+                android:text="Rate this item now" />
+        </RelativeLayout>
+        <!--<LinearLayout android:id="@+id/layout_item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1.8">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Name "
+                    android:id="@+id/name"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/desc"
+                    android:text="Item descriptions"
+                    android:textSize="10dp"/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 8,999"
+                    android:id="@+id/price"
+                    android:textSize="12dp"
+                    android:textColor="#4CAF50"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/ic_wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_favorite_border_black_18dp"/>
+        </LinearLayout>-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#eaeaea"/>
+
+
+</androidx.cardview.widget.CardView>
